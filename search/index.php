@@ -2,8 +2,8 @@
 if(isset($_GET['search'])) {
 ?>
 <h1>Result</h1>
-<p>You've searched for: <?= $_GET['search'] ?></p>
-<p>Found: none</p>
+<p>You've searched for: <strong><?= $_GET['search'] ?></strong></p>
+<p>Found: <strong>none</strong></p>
 <?php
 }
 else {
