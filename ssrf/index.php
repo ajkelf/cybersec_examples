@@ -1,7 +1,7 @@
 <?php
 if(isset($_GET['image'])) {
   header("content-type: image/jpeg");
-  file_get_contents($_GET['image']);
+  echo file_get_contents($_GET['image']);
 }
 else {
 ?>
