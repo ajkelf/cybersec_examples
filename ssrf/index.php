@@ -1,6 +1,6 @@
 <?php
 if(isset($_GET['image'])) {
-  header("content-type: image/jpeg");
+  //header("content-type: image/jpeg");
   echo file_get_contents($_GET['image']);
 }
 else {
