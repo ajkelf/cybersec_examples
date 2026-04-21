@@ -1,6 +1,8 @@
 <?php
 if(isset($_GET['image'])) {
-  //header("content-type: image/jpeg");
+  if(str_contains($_GET['image'],'jpg')) {
+    header("content-type: image/jpeg");
+  }
   echo file_get_contents($_GET['image']);
 }
 else {
